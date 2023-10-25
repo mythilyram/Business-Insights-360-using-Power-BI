@@ -10,4 +10,6 @@ Onboard data analytics to
 - Improve transparency in data
 - Increase profit margin by 10%
 
+## Report features:
 
+[Report features given by the product owner](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/2.report%20feautures.png)
