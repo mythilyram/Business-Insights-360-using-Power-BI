@@ -1,5 +1,13 @@
 # Business-Insights-360-using-Power-BI
 
+## Table of contents
+
+- [Problem Statement](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#problem-statement)
+- [Objective](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#Objective)
+- [Report features](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#report-features)
+- [Project Charter](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#project-charter)
+- [Data Collection and Exploration](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/edit/main/README.md#data-collection-and-exploration)
+
 ## Problem Statement:
 
 AtliQ Hardware, a global consumer electronics company, is experiencing significant growth in its operations across multiple countries. However, the company's current reliance on Excel files for data analytics is proving to be inadequate. Excel files are challenging to work with, especially when dealing with large datasets, and they fall short in extracting valuable insights. This deficiency in effective analytics has resulted in substantial losses for the company in certain regions.
