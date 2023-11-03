@@ -8,9 +8,10 @@
 - [Project Charter](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#project-charter-)
 - [Data Collection and Exploration](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-collection-and-exploration)
 
+
 Power BI 
 - [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
-- [Data Modelling and Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-modelling-and-calculated-columns)
+- [Data Modelling and Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#data-modelling-and-calculated-columns)
 
   
 ## Problem Statement:
@@ -107,24 +108,47 @@ For building the "Performance Over Time" dashboard based on the mockup, the foll
 3. YTD Calculation: The Year to Date (YTD) metric is obtained directly from the current sales table.
 4. Landing Estimate: To calculate the Landing Estimate, append queries by selecting the current sales table and the remaining forecast table. Name this new table "fact_actuals_estimate."
 
-### A few best practices in Power Query:
-- Give meaningful names to query steps
-- Group tables into logical categories
-- Disable loading of tables that are not going to be used outside - helps with performance
-- Use consistent naming conventions for tables and measures
-- Perform Query folding -choose only the required columns in PQ
+### More data transformations were done including 
+- Creating reference tables(to find last sales month)
+- Append queries (actual sales and forecast tables),
+- Merge queries (left join tables to get gross price,pre_invoice_disc_pct),
+- Creating custom columns (Gross Sales, Pre_invoice_discount_amount and Net_invoice_sales_amount)
 
-More data transformations were done including Merge queries, append queries, creating reference tables, creating custom columns etc
+### Implemented some best practices in Power Query:
+- Gave meaningful names to query steps
+- Grouped tables into logical categories
+- Disabled loading of tables that are not going to be used outside - helps with performance
+- Used consistent naming conventions for tables and measures
+- Performed Query folding -choose only the required columns in PQ
 
 ## Data Modelling and Calculated Columns:
 
 ### New Fiscal Year (fy) table using DAX 
-To avoid ambiguity of many to many relationship, built a FY table to get unique values
+To avoid ambiguity of many-to-many relationships in the data model, built a fiscal_year table that gives unique values of fiscal_Year
+
+
 ![FY](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.1%20%20FY%20Table.png)
 
-### ![Data Model](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.%20Data%20model.png)
+
+### Data Model
+
+[Data Model](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.%20Data%20model.png)
+
 
 ###  Calculated Columns:
+
+We have calculated Gross Sales(GS), Pre_invoice_discount_amount(PreIDA) and Net_invoice_sales_amount(NIS amt) in Power Query
+
+#### Computed further components of the P&L Statements using Calculated Columns 
+- post_invoice_deductions_amount (PoID amt), post_invoice_other_deductions_amount (PoIOD amt) from percentages.
+- PoID amt = [NIS]*[PoID%], PoIOD amt = [NIS]*[PoIOD%]
+- net_sales_amount (NS amt) = NIS - PoID - PoIOD
+- manufacturing_cost by multiplying with [qty], frieght_cost & other_cost from percentages*NS
+- total_cogs_amt (COGS) = [manufacturing_cost]+[frieght_cost]+[other_cost]
+- gross_margin_amount (GM amt) = [NS amt]-[COGS]
+
+
+
 
 
 
