@@ -6,11 +6,22 @@
 - [Objective](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#Objective)
 - [Report features](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#report-features)
 - [Project Charter](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#project-charter-)
+    - [Success measures](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#success-measures)
+    - [Timeline](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#timeline)
+    - [Data correctness and completeness](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-correctness-and-completeness)
+    - [Mockup dashboard](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#requested-for-benchmark-numbers-and-mockup-dashboard)
 - [Data Collection and Exploration](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-collection-and-exploration)
 
 
 Power BI 
 - [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
+    -[Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
+    -[Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
+    -[Establishing Fiscal Year](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#establishing-fiscal-year)
+    -[Data Validation Against Benchmark Numbers](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-validation-against-benchmark-numbers)
+    -[Scope the work]
+    -[More data transformations]
+    -[Power Query-best practices]
 - [Data Modelling and Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#data-modelling-and-calculated-columns)
 
   
@@ -98,7 +109,7 @@ It can be seen that our numbers match with the benchmark provided.
 
 ##### Tip: Make sure to pull data from fact tables (transaction data).
 
-### Scope the work: 
+#### Scope the work: 
 > Performing data transformations in advance in Power Query can significantly benefit the development of all four different dashboards.
 > It saves a substantial amount of development time by preparing the data for immediate use in creating visuals and reports.
 
@@ -108,13 +119,13 @@ For building the "Performance Over Time" dashboard based on the mockup, the foll
 3. YTD Calculation: The Year to Date (YTD) metric is obtained directly from the current sales table.
 4. Landing Estimate: To calculate the Landing Estimate, append queries by selecting the current sales table and the remaining forecast table. Name this new table "fact_actuals_estimate."
 
-### More data transformations were done including 
+#### More data transformations 
 - Creating reference tables(to find last sales month)
 - Append queries (actual sales and forecast tables),
 - Merge queries (left join tables to get gross price,pre_invoice_disc_pct),
 - Creating custom columns (Gross Sales, Pre_invoice_discount_amount and Net_invoice_sales_amount)
 
-### Implemented some best practices in Power Query:
+#### Power Query- best practices:
 - Gave meaningful names to query steps
 - Grouped tables into logical categories
 - Disabled loading of tables that are not going to be used outside - helps with performance
@@ -130,9 +141,10 @@ To avoid ambiguity of many-to-many relationships in the data model, built a fisc
 ![FY](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.1%20%20FY%20Table.png)
 
 
-### Data Model
+### Building Data Model Relationships:
+Relationships are established between different tables to construct a cohesive data model.
 
-[Data Model](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.%20Data%20model.png)
+![Data Model](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.%20Data%20model.png)
 
 
 ###  Calculated Columns:
@@ -147,13 +159,23 @@ We have calculated Gross Sales(GS), Pre_invoice_discount_amount(PreIDA) and Net_
 - total_cogs_amt (COGS) = [manufacturing_cost]+[frieght_cost]+[other_cost]
 - gross_margin_amount (GM amt) = [NS amt]-[COGS]
 
+### Optimize report and reduce file size
+
+The file size now is 265MB
+![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8.2%20space%20analysis.png)
+
+we analyze using an external tool called DAX Studio. The show metrics option in DAX Studio shows the amount of space occupied by each table and each column.
+![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8%20space%20analysis.png)
+We can remove any intermediate columns in Power query or in Power BI without affecting the performance. Power BI will dynamically calculate these values as needed. 
+
+The new reduced file zixe is 195MB
+![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8.2%20space%20analysis%20after%20removing%20few%20calculated%20columns.png)
+
+**Thus effectively reducing the file size by 26% **
+>(265-195)/265
 
 
 
-
-
-### Building Data Model Relationships: 
-Relationships are established between different tables to construct a cohesive data model.
 
 
 Building Visuals: To create visuals and reports, data is pulled from the fact tables, which typically store transactional data.
