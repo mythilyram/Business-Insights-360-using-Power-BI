@@ -7,8 +7,12 @@
 - [Report features](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#report-features)
 - [Project Charter](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#project-charter-)
 - [Data Collection and Exploration](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-collection-and-exploration)
+
 Power BI 
-- [Data Loading and Transformation in Power Query]()
+- [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
+- [Data Modelling and Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-modelling-and-calculated-columns)
+
+  
 ## Problem Statement:
 
 AtliQ Hardware, a global consumer electronics company, is experiencing significant growth in its operations across multiple countries. However, the company's current reliance on Excel files for data analytics is proving to be inadequate. Excel files are challenging to work with, especially when dealing with large datasets, and they fall short in extracting valuable insights. This deficiency in effective analytics has resulted in substantial losses for the company in certain regions.
@@ -63,7 +67,7 @@ For the assurance of data accuracy and completeness, we implement multi-level va
 
 - **Identifying Required Datasets**: Following a thorough review of the Data Catalog, the necessary datasets are identified. Subsequently, access requests are submitted to the Data Engineering team to obtain the required data. The organization's data warehouse is established on the MySQL platform.
 
-- Data Warehousing: Data warehousing is the stage where data is prepared and structured for the purpose of analysis.
+- Note: Data Warehousing is the stage where data is prepared and structured for the purpose of analysis.
 
 - **Data Import**: Once the required data files are obtained as dump files, they are imported using MySQL, a relational database management system.
 
@@ -71,9 +75,7 @@ For the assurance of data accuracy and completeness, we implement multi-level va
 
 - **Dimension and Fact Tables**: Dimension tables are created to represent attributes related to customers, markets, and products. Fact tables are established to store data on monthly sales and sales forecasts. These tables encompass important metrics such as freight costs, gross prices, manufacturing costs, and post-pre-invoice deduction percentages.
 
-- **Denormalization**: It is noted that the sales and forecast tables are denormalized. Denormalization simplifies data analysis and querying by reducing the complexity associated with retrieving information from multiple tables.
-
-- **Sales forecasting**: This process serves a crucial role in optimizing inventory, reducing storage costs, and enhancing customer satisfaction by preventing out-of-stock situations.
+- Sales forecasting: This process serves a crucial role in optimizing inventory, reducing storage costs, and enhancing customer satisfaction by preventing out-of-stock situations.
 
 ## Power BI - Data Loading and Transformation in Power Query: 
 The datasets are loaded into Power BI from MySQL, and the transformation process is conducted using Power Query. This step allows for cleaning and structuring the data as needed.
@@ -105,18 +107,28 @@ For building the "Performance Over Time" dashboard based on the mockup, the foll
 3. YTD Calculation: The Year to Date (YTD) metric is obtained directly from the current sales table.
 4. Landing Estimate: To calculate the Landing Estimate, append queries by selecting the current sales table and the remaining forecast table. Name this new table "fact_actuals_estimate."
 
-#### A few best practices in Power Query:
-Giving meaningful query step names helps everyone
-Tables should be grouped into logical categories
-Disabling the load of tables that are not going to be used outside helps with performance
-Use consistent naming conventions for tables and measures
-Perform Query folding by choosing only the required columns in PQ
+### A few best practices in Power Query:
+- Give meaningful names to query steps
+- Group tables into logical categories
+- Disable loading of tables that are not going to be used outside - helps with performance
+- Use consistent naming conventions for tables and measures
+- Perform Query folding -choose only the required columns in PQ
 
-More data transformations done including Merge queries, append queries, creating custom columns, creating reference table etc
+More data transformations were done including Merge queries, append queries, creating reference tables, creating custom columns etc
 
 ## Data Modelling and Calculated Columns:
 
-#### Building Data Model Relationships: 
+### New Fiscal Year (fy) table using DAX 
+To avoid ambiguity of many to many relationship, built a FY table to get unique values
+![FY](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.1%20%20FY%20Table.png)
+
+### ![Data Model](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/7.%20Data%20model.png)
+
+###  Calculated Columns:
+
+
+
+### Building Data Model Relationships: 
 Relationships are established between different tables to construct a cohesive data model.
 
 
