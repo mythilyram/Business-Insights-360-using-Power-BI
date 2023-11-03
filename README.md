@@ -15,13 +15,13 @@
 
 Power BI 
 - [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
-    -[Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
-    -[Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
-    -[Establishing Fiscal Year](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#establishing-fiscal-year)
-    -[Data Validation Against Benchmark Numbers](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-validation-against-benchmark-numbers)
-    -[Scope the work]
-    -[More data transformations]
-    -[Power Query-best practices]
+   -[Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
+   -[Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
+   -[Establishing Fiscal Year](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#establishing-fiscal-year)
+   -[Data Validation Against Benchmark Numbers](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-validation-against-benchmark-numbers)
+   -[Scope the work](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#scope-the-work)
+   -[More data transformations](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#more-data-transformations)
+   -[Power Query-best practices](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-query--best-practices)
 - [Data Modelling and Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#data-modelling-and-calculated-columns)
 
   
