@@ -15,15 +15,19 @@
 
 Power BI 
 - [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
-   -[Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
-   -[Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
-   -[Establishing Fiscal Year](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#establishing-fiscal-year)
-   -[Data Validation Against Benchmark Numbers](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-validation-against-benchmark-numbers)
-   -[Scope the work](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#scope-the-work)
-   -[More data transformations](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#more-data-transformations)
-   -[Power Query-best practices](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-query--best-practices)
+   - [Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
+   - [Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
+   - [Establishing Fiscal Year](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#establishing-fiscal-year)
+   - [Data Validation Against Benchmark Numbers](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-validation-against-benchmark-numbers)
+   - [Scope the work](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#scope-the-work)
+   - [More data transformations](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#more-data-transformations)
+   - [Power Query-best practices](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-query--best-practices)
 - [Data Modelling and Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#data-modelling-and-calculated-columns)
-
+    - [New table using DAX](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#new-fiscal-year-fy-table-using-dax)
+    - [Building Data Model Relationships](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#building-data-model-relationships)
+    - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
+ - [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
+    - []()
   
 ## Problem Statement:
 
@@ -107,7 +111,7 @@ Before creating full-fledged dashboards, it is essential to conduct primary data
 It can be seen that our numbers match with the benchmark provided. 
 ![Data Validation Against Benchmark Numbers](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/6.Validating%20against%20Benchmark.png)
 
-##### Tip: Make sure to pull data from fact tables (transaction data).
+##### Tip: Make sure to pull data from dimension tables.
 
 #### Scope the work: 
 > Performing data transformations in advance in Power Query can significantly benefit the development of all four different dashboards.
@@ -159,7 +163,7 @@ We have calculated Gross Sales(GS), Pre_invoice_discount_amount(PreIDA) and Net_
 - total_cogs_amt (COGS) = [manufacturing_cost]+[frieght_cost]+[other_cost]
 - gross_margin_amount (GM amt) = [NS amt]-[COGS]
 
-### Optimize report and reduce file size
+## Optimize report and reduce file size by 25%
 
 The file size now is 265MB
 ![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8.2%20space%20analysis.png)
@@ -171,13 +175,22 @@ We can remove any intermediate columns in Power query or in Power BI without aff
 The new reduced file zixe is 195MB
 ![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8.2%20space%20analysis%20after%20removing%20few%20calculated%20columns.png)
 
-**Thus effectively reducing the file size by 26% **
+**Thus effectively reducing the file size by 26%**
 >(265-195)/265
 
+## Building actual metrics and visuals
+
+> Create all the measures needed for the visuals.
+
+![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/9%20Measures.png)
+
+> Create a static table called P&L rows and input values as needed to be displayed in P&L Statement.
+
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/937e4108-f0a8-4d94-839c-e8122b120b70)
 
 
 
 
-Building Visuals: To create visuals and reports, data is pulled from the fact tables, which typically store transactional data.
+Building Visuals: To create visuals and reports, data is pulled from the dim tables
 
 
