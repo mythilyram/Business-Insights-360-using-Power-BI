@@ -184,13 +184,34 @@ The new reduced file zixe is 195MB
 
 ![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/9%20Measures.png)
 
-> Create a static table called P&L rows and input values as needed to be displayed in P&L Statement.
+More measures were created as needed.
+
+> Create a static table called P&L rows and input values as needed to be displayed in the P&L Statement.
 
 ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/937e4108-f0a8-4d94-839c-e8122b120b70)
 
+> Building Visuals: All the visuals are built according to the mock-up dashboard provided. To create visuals and reports, data is pulled from the dim tables.
 
+- Finance View:
+    - Used Matrix to build the P&L Structure
+    - Line Chart to display Performance over time
+    - Matrix for market analysis
+    - Built Top product, Market & region visuals
 
+- Sales View: 
+    - Top customers & performance matrix visual for NS, GM & GM %
+    - Scatter plot for quadrant analysis with NS denoted by the size of the bubble and GM% in the tooltip
+    - Product performance analysis from Tree-level breakdown of Segment, Category, and product
+    - Unit economics visual
+ The focus is on customers and Gross Margin. For sales teams that deal with customers. Each team has its own customer, focus on customer relationship, their sales, and make sure the business is growing per customer.
 
-Building Visuals: To create visuals and reports, data is pulled from the dim tables
+- Marketing View: 
+    - Top Segment, category and product matrix visual for NS, GM & NP
+    - Scatter plot for quadrant analysis with NS denoted by the size of the bubble and GM% in the tooltip
+    - Product performance analysis from Tree-level breakdown of region and market (countries)
+    - Unit economics visual - Waterfalls and donut chart
+The focus is on Products and Net Profit. The marketing team is focused on running ads, promotions,  and doing marketing for the products.
+Marketing manager in Canada
 
-
+- Supply Chain View:
+    - The supply chain team`s job is to make sure, their manufacturing plant produces enough inventory to satisfy the demands of the customer.
