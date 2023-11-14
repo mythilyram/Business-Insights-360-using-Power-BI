@@ -234,16 +234,55 @@ Marketing manager in Canada
 - Replaced GM with GM% in Sales and Marketing View.
 - Include Targets for the FY 2022 given as an Excel file. Display blank values for previous years.
 
-#### Create a dynamic switch between Targets and LY in the Finance View:
+#### Implementing dynamic targets - switch between Targets and LY in the Finance View:
 
-- Use Enter Data in Home page to enter the details of Toggle switch.
-- ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/bdf7b285-2647-41f8-b022-a0d01e5fe512)
-- Use this table as a Slicer with a Single select option.
+- Use Enter Data on the Home page to enter the details of the Toggle switch.
+  ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/bdf7b285-2647-41f8-b022-a0d01e5fe512)
+- Use this table as a Slicer with a Single Select option.
 - Create a new measure for dynamic selection
-NS BM $ = 
+  
+NS BM $ =
+
 SWITCH(TRUE(),
+
 SELECTEDVALUE('Set BM'[ID])= 1, [NS $ LY],
-SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]) and include this in the KPI Visual.
+
+SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
+
+) 
+
+- Similarly calculated GM % and NP % and included in the KPI Visual
+(BM - Benchmark)
+
+#### Dynamic slicer to filter visual - set target tolerance limit in Sales View
+
+- Modelling tab - New Parameter - Numeric range
+  ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/5555a770-385c-4184-94da-f540dc16583c)
+
+- or use the DAX = GENERATESERIES(0,0.2,0.01) in Home - New Table
+- Calculate the GM % Variance = [GM % BM] - [GM %]
+- GM % Filter = IF([GM % Variance] >= SELECTEDVALUE('Target Gap Tolerance'[Target Gap Tolerance]),1,0)
+- Use the above Metrics as a visual level filter, where GM % Filter = 1
+
+#### Bookmarks - Create a toggle button to switch between visuals in Marketing View  
+
+- Layer the visuals on top of one another and label each of them accordingly in the selection pane.
+- Group the visuals that will be displayed at a time.
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/5b2c90b5-84e9-4cb3-9278-7a9f51cd3fdd)
+
+- In the Bookmarks pane, add new bookmarks, name them.
+- with appropriate visuals selected (and hidden) in the selection pane, update each bookmark one by one.
+- ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/9235c8a4-3e84-4f30-a07b-594ee24975b9)
+
+- Finally, select the corresponding toggle button,
+- In format, turn action - ON,
+- select type - bookmark,
+- select the corresponding bookmark.
+
+   
+
+
+ 
 
 
 
