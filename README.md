@@ -26,8 +26,8 @@ Power BI
     - [New table using DAX](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#new-fiscal-year-fy-table-using-dax)
     - [Building Data Model Relationships](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#building-data-model-relationships)
     - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
- - [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
-    - []()
+- [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
+- [Building actual metrics and visuals](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#building-actual-metrics-and-visuals)
   
 ## Problem Statement:
 
@@ -172,7 +172,7 @@ we analyze using an external tool called DAX Studio. The show metrics option in 
 ![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8%20space%20analysis.png)
 We can remove any intermediate columns in Power query or in Power BI without affecting the performance. Power BI will dynamically calculate these values as needed. 
 
-The new reduced file zixe is 195MB
+The new reduced file size is 195MB
 ![](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/8.2%20space%20analysis%20after%20removing%20few%20calculated%20columns.png)
 
 **Thus effectively reducing the file size by 26%**
@@ -192,20 +192,20 @@ More measures were created as needed.
 
 > Building Visuals: All the visuals are built according to the mock-up dashboard provided. To create visuals and reports, data is pulled from the dim tables.
 
-- Finance View:
+### Finance View:
     - Used Matrix to build the P&L Structure
     - Line Chart to display Performance over time
     - Matrix for market analysis
     - Built Top product, Market & region visuals
 
-- Sales View: 
+### Sales View: 
     - Top customers & performance matrix visual for NS, GM & GM %
     - Scatter plot for quadrant analysis with NS denoted by the size of the bubble and GM% in the tooltip
     - Product performance analysis from Tree-level breakdown of Segment, Category, and product
     - Unit economics visual
  The focus is on customers and Gross Margin. For sales teams that deal with customers. Each team has its own customer, focus on customer relationship, their sales, and make sure the business is growing per customer.
 
-- Marketing View: 
+### Marketing View: 
     - Top Segment, category and product matrix visual for NS, GM & NP
     - Scatter plot for quadrant analysis with NS denoted by the size of the bubble and GM% in the tooltip
     - Product performance analysis from Tree-level breakdown of region and market (countries)
@@ -213,5 +213,56 @@ More measures were created as needed.
 The focus is on Products and Net Profit. The marketing team is focused on running ads, promotions,  and doing marketing for the products.
 Marketing manager in Canada
 
-- Supply Chain View:
+### Supply Chain Basics: 
     - The supply chain team`s job is to make sure, their manufacturing plant produces enough inventory to satisfy the demands of the customer.
+    - Manufacturing plant produces hardware - stored in a warehouse - inventory sent to customers.
+    - When the forecast does not match actual sales, there is a problem of excess inventory and cost 
+    associated with storing and maintaining it or an Out-of-stock situation which results in lost business.
+    - Absolute error needs to be calculated on a monthly and product level granularity.
+    -Key metrics 
+        - Net Error           = Forecast Qty - Sales Qty
+        - Net Error %         = Net Error / Forecast Qty
+        - Absolute Error      = Sumx(Abs(Net Error)) for each product code for each date.
+        - Absolute Error %    = Absolute Error / Forecast Qty
+        - Forecast Accuracy % = 1 - Absolute Error %
+    
+### Implementing Stakeholder`s Feedback and Suggestions:
+
+- Added Footers showing the Date of Refresh, Last Sales Month, and currency type.
+     - Date of Refresh: Initialize a blank Queru in PQ and get DateTime.LocalNow(). Convert it to a table and format it as Date/Time.
+     - Last Sales Month Formatted as MMM YY for readability.
+- Replaced GM with GM% in Sales and Marketing View.
+- Include Targets for the FY 2022 given as an Excel file. Display blank values for previous years.
+
+#### Create a dynamic switch between Targets and LY in the Finance View:
+
+- Use Enter Data in Home page to enter the details of Toggle switch.
+- ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/bdf7b285-2647-41f8-b022-a0d01e5fe512)
+- Use this table as a Slicer with a Single select option.
+- Create a new measure for dynamic selection
+NS BM $ = 
+SWITCH(TRUE(),
+SELECTEDVALUE('Set BM'[ID])= 1, [NS $ LY],
+SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]) and include this in the KPI Visual.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Supply Chain view:  
+     - 
+      Market - country
+      Region - like continent Asia, N/A
+
+      Selected yr - shld be dark color
+      "-1 - ligher version
+
