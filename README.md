@@ -279,7 +279,21 @@ SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
 - select type - bookmark,
 - select the corresponding bookmark.
 
-   
+#### Tooltips - Show Sales Trend   
+
+- Add a new report page on the Power BI desktop, and format the page as a tooltip. This enables this page to be used as a tooltip in other visuals.
+- Create a Line chart visual to show sales trends.
+-  Customize the title with a new measure.
+  > Sales Trend Title = "NS & GM % for " & SELECTEDVALUE(dim_customer[customer])
+- In Sales View, select the visual where the tooltip is required and assign that tooltip here.
+
+#### Market Share
+
+- We have been provided with Market share data. 
+> Market share of company x = sum(sales of company X)/sum(sales of all companies)
+
+
+
 
 
  
