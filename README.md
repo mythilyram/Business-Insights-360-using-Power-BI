@@ -13,7 +13,7 @@
 - [Data Collection and Exploration](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-collection-and-exploration)
 
 
-- Power BI 
+### Power BI 
 - [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
    - [Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
    - [Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
@@ -28,7 +28,7 @@
     - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
 - [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
 
-- Visualisation
+### Visualisation
 - [Building actual metrics and visuals](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#building-actual-metrics-and-visuals)
     - [Home Page](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#home-page) 
     - [Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#finance-view)
