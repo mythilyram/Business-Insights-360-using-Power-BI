@@ -33,9 +33,9 @@ Power BI
     - [Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#sales-view)
     - [Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#marketing-view)
     - [Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#supply-chain-view)
-    - [Executive View]()
-    - [Info]()
-    - [Support]()
+    - [Executive View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#executive-view)
+    - [Info](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#info-page)
+    - [Support](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#support-page)
 - [Implementing Stakeholder`s Feedback and Suggestions](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-stakeholders-feedback-and-suggestions)
     - [Implementing dynamic targets - switch between Targets and LY in the Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-dynamic-targets---switch-between-targets-and-ly-in-the-finance-view)
     - [Dynamic slicer to filter visual - set target tolerance limit in Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#dynamic-slicer-to-filter-visual---set-target-tolerance-limit-in-sales-view)
@@ -327,6 +327,7 @@ SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
 - select the corresponding bookmark.
 
 #### Tooltips - Show Sales Trend   
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/6efe7f0c-969c-4e21-94f6-53610012c17d)
 
 - Add a new report page on the Power BI desktop, and format the page as a tooltip. This enables this page to be used as a tooltip in other visuals.
 - Create a Line chart visual to show sales trends.
@@ -339,6 +340,12 @@ SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
 - We have been provided with Market share data. 
 > Market share of company x = sum(sales of company X)/sum(sales of all companies)
 
-   Market - country
+#### Ribbon Chart:
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/7ac1d753-473a-4cb5-9831-a86f101943de)
+   
+#### Conditional Formatting:
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/33eaf558-2ccf-443f-a469-e27cca229bf4)
+
+Market - country
    Region - like continent Asia, Europe
 
