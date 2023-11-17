@@ -13,7 +13,7 @@
 - [Data Collection and Exploration](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#data-collection-and-exploration)
 
 
-Power BI 
+- Power BI 
 - [Data Loading and Transformation in Power Query](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#power-bi---data-loading-and-transformation-in-power-query)
    - [Column Distribution and Profile](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#column-distribution-and-profile)
    - [Creating a Date Table](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#creating-a-date-table)
@@ -27,6 +27,8 @@ Power BI
     - [Building Data Model Relationships](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#building-data-model-relationships)
     - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
 - [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
+
+- Visualisation
 - [Building actual metrics and visuals](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#building-actual-metrics-and-visuals)
     - [Home Page](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#home-page) 
     - [Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#finance-view)
@@ -41,6 +43,8 @@ Power BI
     - [Dynamic slicer to filter visual - set target tolerance limit in Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#dynamic-slicer-to-filter-visual---set-target-tolerance-limit-in-sales-view)
     - [Bookmarks - Create a toggle button to switch between visuals in Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#bookmarks---create-a-toggle-button-to-switch-between-visuals-in-marketing-view)
     - [Tooltips - Show Sales Trend](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#tooltips---show-sales-trend)
+    - [Ribbon Chart](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#ribbon-chart)
+    - [Conditional Formatting](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#conditional-formatting)
 
   
 ## Problem Statement:
