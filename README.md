@@ -36,11 +36,11 @@ Power BI
     - [Executive View]()
     - [Info]()
     - [Support]()
--[Implementing Stakeholder`s Feedback and Suggestions](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-stakeholders-feedback-and-suggestions)
-    -[Implementing dynamic targets - switch between Targets and LY in the Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-dynamic-targets---switch-between-targets-and-ly-in-the-finance-view)
-    -[Dynamic slicer to filter visual - set target tolerance limit in Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#dynamic-slicer-to-filter-visual---set-target-tolerance-limit-in-sales-view)
-    -[Bookmarks - Create a toggle button to switch between visuals in Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#bookmarks---create-a-toggle-button-to-switch-between-visuals-in-marketing-view)
-    -[Tooltips - Show Sales Trend](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#tooltips---show-sales-trend)
+- [Implementing Stakeholder`s Feedback and Suggestions](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-stakeholders-feedback-and-suggestions)
+    - [Implementing dynamic targets - switch between Targets and LY in the Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-dynamic-targets---switch-between-targets-and-ly-in-the-finance-view)
+    - [Dynamic slicer to filter visual - set target tolerance limit in Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#dynamic-slicer-to-filter-visual---set-target-tolerance-limit-in-sales-view)
+    - [Bookmarks - Create a toggle button to switch between visuals in Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#bookmarks---create-a-toggle-button-to-switch-between-visuals-in-marketing-view)
+    - [Tooltips - Show Sales Trend](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#tooltips---show-sales-trend)
 
   
 ## Problem Statement:
