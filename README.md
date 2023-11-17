@@ -28,11 +28,11 @@ Power BI
     - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
 - [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
 - [Building actual metrics and visuals](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#building-actual-metrics-and-visuals)
-    - [Home Page]() 
+    - [Home Page](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#home-page) 
     - [Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#finance-view)
     - [Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#sales-view)
     - [Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#marketing-view)
-    - [Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#supply-chain-basics)
+    - [Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#supply-chain-view)
     - [Executive View]()
     - [Info]()
     - [Support]()
@@ -211,14 +211,16 @@ More measures were created as needed.
 ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/1..%20Home.png)
 
 ### Finance View:
+![2  Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/f270a111-4c2e-4667-9694-e38b63e237e8)
+
     - Used Matrix to build the P&L Structure
     - Line Chart to display Performance over time
     - Matrix for market analysis
     - Built Top product, Market & region visuals
-    ![2  Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/fa069300-9b4a-4cac-8ae8-cbcb2838fd8e)
-
 
 ### Sales View: 
+ ![3  Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/a18955d9-85e3-49bb-ab3b-af4140f2de86)
+ 
     - Top customers & performance matrix visual for NS, GM & GM %
     - Scatter plot for quadrant analysis with NS denoted by the size of the bubble and GM% in the tooltip
     - Product performance analysis from Tree-level breakdown of Segment, Category, and product
@@ -226,6 +228,8 @@ More measures were created as needed.
  The focus is on customers and Gross Margin. For sales teams that deal with customers. Each team has its own customer, focus on customer relationship, their sales, and make sure the business is growing per customer.
 
 ### Marketing View: 
+![4  Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/18a0042c-ee6b-4712-b3b1-fc4c52a06ec3)
+
     - Top Segment, category and product matrix visual for NS, GM & NP
     - Scatter plot for quadrant analysis with NS denoted by the size of the bubble and GM% in the tooltip
     - Product performance analysis from Tree-level breakdown of region and market (countries)
@@ -234,6 +238,8 @@ The focus is on Products and Net Profit. The marketing team is focused on runnin
 Marketing manager in Canada
 
 ### Supply Chain view:  
+![5  Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/3e1676bd-e99f-4a9b-ae79-f4c92e82f586)
+
 #### Supply Chain Basics: 
     - The supply chain team`s job is to make sure, their manufacturing plant produces enough inventory to satisfy the demands of the customer.
     - Manufacturing plant produces hardware - stored in a warehouse - inventory sent to customers.
@@ -246,8 +252,19 @@ Marketing manager in Canada
         - Absolute Error      = Sumx(Abs(Net Error)) for each product code for each date.
         - Absolute Error %    = Absolute Error / Forecast Qty
         - Forecast Accuracy % = 1 - Absolute Error %
+
+### Executive View: 
+![6  Executive View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/6942d4de-857d-4741-ba5a-24688fec420a)
+
+### Info Page:
+![7  Info](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/65c2d7cc-852e-44a2-930b-0c4da22b8701)
+
+### Support page:
+![8  Support](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/dde3f73f-31dc-496d-a849-64cb62eb8b5c)
+
     
 ### Implementing Stakeholder`s Feedback and Suggestions:
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/8538c322-0a3c-4e59-8d2f-357a3bdf2d47)
 
 - Added Footers showing the Date of Refresh, Last Sales Month, and currency type.
      - Date of Refresh: Initialize a blank Queru in PQ and get DateTime.LocalNow(). Convert it to a table and format it as Date/Time.
@@ -256,6 +273,8 @@ Marketing manager in Canada
 - Include Targets for the FY 2022 given as an Excel file. Display blank values for previous years.
 
 #### Implementing dynamic targets - switch between Targets and LY in the Finance View:
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/9a8bc01b-2034-4675-8171-309268bca92a)
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/22505b7f-11a2-46bc-ac55-99e42ea981f4)
 
 - Use Enter Data on the Home page to enter the details of the Toggle switch.
   ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/bdf7b285-2647-41f8-b022-a0d01e5fe512)
@@ -276,6 +295,8 @@ SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
 (BM - Benchmark)
 
 #### Dynamic slicer to filter visual - set target tolerance limit in Sales View
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/7bca967d-1f8a-41e7-bf99-c883ff734824)
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/ad97d792-603a-436d-b5a3-6171f0d77cf7)
 
 - Modelling tab - New Parameter - Numeric range
   ![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/5555a770-385c-4184-94da-f540dc16583c)
@@ -286,6 +307,11 @@ SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
 - Use the above Metrics as a visual level filter, where GM % Filter = 1
 
 #### Bookmarks - Create a toggle button to switch between visuals in Marketing View  
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/92b75d4a-ae04-4445-8c7a-dbf863eed31e)
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/d2bdcc30-d8af-49a5-a095-0c2c89e64b15)
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/59a9bd94-cbed-4d91-ba3d-5a200702dac6)
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/65d58890-cab3-4565-89fb-1f4da795d350)
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/5edd06b8-0694-4281-8d6c-7ef9b29d4a2b)
 
 - Layer the visuals on top of one another and label each of them accordingly in the selection pane.
 - Group the visuals that will be displayed at a time.
