@@ -28,6 +28,20 @@ Power BI
     - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
 - [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
 - [Building actual metrics and visuals](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#building-actual-metrics-and-visuals)
+    - [Home Page]() 
+    - [Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#finance-view)
+    - [Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#sales-view)
+    - [Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#marketing-view)
+    - [Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#supply-chain-basics)
+    - [Executive View]()
+    - [Info]()
+    - [Support]()
+-[Implementing Stakeholder`s Feedback and Suggestions](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-stakeholders-feedback-and-suggestions)
+    -[Implementing dynamic targets - switch between Targets and LY in the Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#implementing-dynamic-targets---switch-between-targets-and-ly-in-the-finance-view)
+    -[Dynamic slicer to filter visual - set target tolerance limit in Sales View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#dynamic-slicer-to-filter-visual---set-target-tolerance-limit-in-sales-view)
+    -[Bookmarks - Create a toggle button to switch between visuals in Marketing View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#bookmarks---create-a-toggle-button-to-switch-between-visuals-in-marketing-view)
+    -[Tooltips - Show Sales Trend](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#tooltips---show-sales-trend)
+
   
 ## Problem Statement:
 
@@ -192,11 +206,17 @@ More measures were created as needed.
 
 > Building Visuals: All the visuals are built according to the mock-up dashboard provided. To create visuals and reports, data is pulled from the dim tables.
 
+### Home Page:
+
+![image](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/1..%20Home.png)
+
 ### Finance View:
     - Used Matrix to build the P&L Structure
     - Line Chart to display Performance over time
     - Matrix for market analysis
     - Built Top product, Market & region visuals
+    ![2  Finance View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/fa069300-9b4a-4cac-8ae8-cbcb2838fd8e)
+
 
 ### Sales View: 
     - Top customers & performance matrix visual for NS, GM & GM %
@@ -213,7 +233,8 @@ More measures were created as needed.
 The focus is on Products and Net Profit. The marketing team is focused on running ads, promotions,  and doing marketing for the products.
 Marketing manager in Canada
 
-### Supply Chain Basics: 
+### Supply Chain view:  
+#### Supply Chain Basics: 
     - The supply chain team`s job is to make sure, their manufacturing plant produces enough inventory to satisfy the demands of the customer.
     - Manufacturing plant produces hardware - stored in a warehouse - inventory sent to customers.
     - When the forecast does not match actual sales, there is a problem of excess inventory and cost 
@@ -292,30 +313,6 @@ SELECTEDVALUE('Set BM'[ID])= 2, [NS $ Target]
 - We have been provided with Market share data. 
 > Market share of company x = sum(sales of company X)/sum(sales of all companies)
 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Supply Chain view:  
-     - 
-      Market - country
-      Region - like continent Asia, N/A
-
-      Selected yr - shld be dark color
-      "-1 - ligher version
+   Market - country
+   Region - like continent Asia, Europe
 
