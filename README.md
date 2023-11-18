@@ -26,7 +26,7 @@
     - [New table using DAX](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#new-fiscal-year-fy-table-using-dax)
     - [Building Data Model Relationships](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#building-data-model-relationships)
     - [Calculated Columns](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#calculated-columns)
-- [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size)
+- [Optimize report and reduce file size by 25%](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#optimize-report-and-reduce-file-size-by-25)
 
 ### Visualisation
 - [Building actual metrics and visuals](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/tree/main#building-actual-metrics-and-visuals)
@@ -242,7 +242,7 @@ The focus is on Products and Net Profit. The marketing team is focused on runnin
 Marketing manager in Canada
 
 ### Supply Chain view:  
-![5  Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/3e1676bd-e99f-4a9b-ae79-f4c92e82f586)
+![5  Supply Chain View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/9d8a4c6d-f4f2-49c4-bc67-4221b17cd69a)
 
 #### Supply Chain Basics: 
     - The supply chain team`s job is to make sure, their manufacturing plant produces enough inventory to satisfy the demands of the customer.
@@ -261,7 +261,7 @@ Marketing manager in Canada
 ![6  Executive View](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/6942d4de-857d-4741-ba5a-24688fec420a)
 
 ### Info Page:
-![7  Info](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/65c2d7cc-852e-44a2-930b-0c4da22b8701)
+![7  Info new](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/2e1e8822-894b-47cc-8897-fd6d34bf4245)
 
 ### Support page:
 ![8  Support](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/assets/123518126/dde3f73f-31dc-496d-a849-64cb62eb8b5c)
