@@ -1,5 +1,7 @@
 # Business-Insights-360-using-Power-BI
 
+[Link to interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTMyNWNkMDItNGFlNy00MmQyLTkwNGYtOTViMzk0OTc1OTMxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
 ## Table of contents
 
 - [Problem Statement](https://github.com/mythilyram/Business-Insights-360-using-Power-BI/blob/main/README.md#problem-statement)
