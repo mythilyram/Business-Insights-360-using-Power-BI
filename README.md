@@ -123,7 +123,7 @@ The "View" tab is used to provide a quick summary of data, offering insights int
 A date table is created using the M language in Power Query. To do this, a new source is added, and a blank query is initiated. By searching "create date table in Power Query" and following the steps provided in the [microsoft fabric community](https://community.fabric.microsoft.com/t5/Desktop/Creating-Date-Tables/m-p/553980), a date table is established. Our data spans from September 2017 to August 2022.
 
 #### Establishing Fiscal Year: 
-AtliQ follows a fiscal year that begins in September and ends in August. To obtain the fiscal year corresponding to the dates, a new column is added to the date table. This column calculates the start of the month, and a custom column is utilized to determine the fiscal year using the formula: **Date.Year(Date.AddMonths([Month], 4))**. The column type is converted to text, and the file is saved.
+AtliQ follows a fiscal year that begins in September and ends in August. To obtain the fiscal year corresponding to the dates, a new column is added to the date table. This column calculates the "start of the month", and a custom column is utilized to determine the fiscal year using the formula: **Date.Year(Date.AddMonths([Month], 4))**. The column type is converted to text, and the file is saved.
 
 #### Data Validation Against Benchmark Numbers:
 Before creating full-fledged dashboards, it is essential to conduct primary data validation in Power BI. This step ensures that the data is accurate and aligned with benchmark numbers.
