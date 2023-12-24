@@ -1,6 +1,7 @@
 # Business-Insights-360-using-Power-BI
 
 [Link to interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZTMyNWNkMDItNGFlNy00MmQyLTkwNGYtOTViMzk0OTc1OTMxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+[LinkedIn](https://www.linkedin.com/posts/mythilyramanathan_business-insights-activity-7131626571169189888-wxpe?utm_source=share&utm_medium=member_desktop)
 
 ## Table of contents
 
